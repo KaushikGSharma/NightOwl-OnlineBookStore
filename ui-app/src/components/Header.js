@@ -1,8 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+
 
 const Header = () => {
+    const history = useHistory();
+
     return <div className="header-panal">
-        <h1 className="h1">This is Header</h1></div>
+        <a onClick={() => history.push('/')}>This is Header</a></div>
 }
 
 export default Header;
