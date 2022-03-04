@@ -7,14 +7,14 @@ import BookDetailsPage from "./BookDetailsPage";
 
 const AppContainer = () => {
     return <div>
-        <Header></Header>
+        <Header />
         <Switch>
             <Route exact path={'/'} component={BookListPage}></Route>
             <Route exact path={'/bookdetails/:id'} component={BookDetailsPage}></Route>
-
         </Switch>
-        <BookListPage/>
+        {/* <BookListPage /> */}
     </div>
+
 };
 
 export default AppContainer;
